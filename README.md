@@ -16,5 +16,7 @@ brew install ripgrep
 brew install lazygit
 ```
 
+## Installation
 
+Followed https://docs.rockylinux.org/books/nvchad tutorial.
 
