@@ -39,6 +39,17 @@ M.ui = {
       fg = "red",
     },
 
+    NvimTreeGitDirty = {
+      fg = "yellow",
+    },
+
+    NvimTreeGitNew = {
+      fg = "green",
+    },
+
+    NvimTreeGitDeleted = {
+      fg = "red",
+    },
   },
 
   statusline = {
