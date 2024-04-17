@@ -2,15 +2,47 @@
 -- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua
 
 ---@type ChadrcConfig
+
 local M = {}
 
 M.ui = {
-	theme = "github_dark",
+	theme = "doomchad",
 
-	telescope = { style = "borderless" }, -- borderless, bordered
+  telescope = { style = "borderless" }, -- borderless, bordered
+
+  hl_override = {
+    DiffAdd = {
+      fg = "green",
+    },
+
+    DiffAdded = {
+      fg = "green",
+    },
+
+    DiffChange = {
+      fg = "blue",
+    },
+
+    DiffChangeDelete = {
+      fg = "red",
+    },
+
+    DiffModified = {
+      fg = "blue",
+    },
+
+    DiffDelete = {
+      fg = "red",
+    },
+
+    DiffRemoved = {
+      fg = "red",
+    },
+
+  },
 
   statusline = {
-    theme = "minimal", -- default/vscode/vscode_colored/minimal
+    theme = "vscode_colored", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
     separator_style = "arrow",
@@ -18,7 +50,8 @@ M.ui = {
     modules = nil,
   },
 
-  cheatsheet = { theme = "grid" }, -- simple/grid
+  cheatsheet = { theme = "grid" },
 }
 
 return M
+

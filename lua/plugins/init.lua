@@ -15,7 +15,7 @@ return {
   --     require "configs.lspconfig"
   --   end,
   -- },
-  --
+  --  
   {
   	"williamboman/mason.nvim",
   	opts = {
@@ -34,6 +34,10 @@ return {
        "html", "css"
   		},
   	},
+
+    config = function()
+      require "configs.nvimtree"
+    end,
   },
 }
 
