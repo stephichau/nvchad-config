@@ -6,9 +6,13 @@
 local M = {}
 
 M.ui = {
-	theme = "doomchad",
+	theme = "yoru",
 
-  telescope = { style = "borderless" }, -- borderless, bordered
+  nvdash = {
+    load_on_startup = true,
+  },
+
+  telescope = { style = "bordered" }, -- borderless, bordered
 
   hl_override = {
     DiffAdd = {
@@ -47,6 +51,10 @@ M.ui = {
       fg = "green",
     },
 
+    NvimTreeGitModified = {
+      fg = "yellow",
+    },
+
     NvimTreeGitDeleted = {
       fg = "red",
     },
@@ -61,7 +69,7 @@ M.ui = {
     modules = nil,
   },
 
-  cheatsheet = { theme = "grid" },
+  cheatsheet = { theme = "simple" },
 }
 
 return M

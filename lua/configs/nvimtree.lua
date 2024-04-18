@@ -1,4 +1,4 @@
-require('nvim-tree').setup({
+return {
   renderer = {
     icons = {
       glyphs = {
@@ -9,9 +9,10 @@ require('nvim-tree').setup({
           untracked = "U",
           deleted = "D",
           ignored = "I",
+          unstaged = "M",
         },
       },
     },
   },
-})
+}
 

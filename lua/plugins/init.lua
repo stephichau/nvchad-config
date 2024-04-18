@@ -34,9 +34,21 @@ return {
        "html", "css"
   		},
   	},
+  },
 
-    config = function()
-      require "configs.nvimtree"
+  {
+    "nvim-tree/nvim-tree.lua",
+    lazy = false,
+    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+    opts = function()
+      return require "nvchad.configs.nvimtree"
+    end,
+    config = function(_, opts)
+      dofile(vim.g.base46_cache .. "nvimtree")
+
+      local result = require("configs.nvimtree")
+
+      require("nvim-tree").setup(vim.tbl_deep_extend("force", opts, result))
     end,
   },
 }
