@@ -42,22 +42,6 @@ M.ui = {
     DiffRemoved = {
       fg = "red",
     },
-
-    NvimTreeGitDirty = {
-      fg = "yellow",
-    },
-
-    NvimTreeGitNew = {
-      fg = "green",
-    },
-
-    NvimTreeGitModified = {
-      fg = "yellow",
-    },
-
-    NvimTreeGitDeleted = {
-      fg = "red",
-    },
   },
 
   statusline = {
