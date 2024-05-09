@@ -15,33 +15,33 @@ M.ui = {
   telescope = { style = "bordered" }, -- borderless, bordered
 
   hl_override = {
-    DiffAdd = {
-      fg = "green",
-    },
+    -- DiffAdd = {
+    --   fg = "green",
+    -- },
+    --
+    -- DiffAdded = {
+    --   fg = "green",
+    -- },
+    --
+    -- DiffChange = {
+    --   fg = "blue",
+    -- },
 
-    DiffAdded = {
-      fg = "green",
-    },
+    -- DiffChangeDelete = {
+    --  fg = "red",
+    -- },
 
-    DiffChange = {
-      fg = "blue",
-    },
-
-    DiffChangeDelete = {
-      fg = "red",
-    },
-
-    DiffModified = {
-      fg = "blue",
-    },
-
-    DiffDelete = {
-      fg = "red",
-    },
-
-    DiffRemoved = {
-      fg = "red",
-    },
+    -- DiffModified = {
+    --   fg = "blue",
+    -- },
+    --
+    -- DiffDelete = {
+    --   fg = "red",
+    -- },
+    --
+    -- DiffRemoved = {
+    --   fg = "red",
+    -- },
   },
 
   statusline = {
